@@ -14,7 +14,7 @@ pipeline {
         ansiColor('xterm')
     }
     parameters {
-        string(name: 'version', defaultValue: '', description: 'What is the artifact version?')
+        string(name: 'version', defaultValue: '${params.version}', description: 'What is the artifact version?')
         string(name: 'environment', defaultValue: 'dev', description: 'What is environment?')
         booleanParam(name: 'Destroy', defaultValue: 'false', description: 'What is Destroy?')
         booleanParam(name: 'Create', defaultValue: '', description: 'What is Create?')
