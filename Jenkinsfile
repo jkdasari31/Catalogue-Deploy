@@ -6,10 +6,10 @@ pipeline {
     }
     environment { 
         packageVersion = ''
-        nexusURL = '172.31.31.225:8081'
+        nexusURL = '172.31.20.61:8081'
     }
     options {
-        timeout(time: 1, unit: 'MINUTES')
+        timeout(time: 20, unit: 'MINUTES')
         disableConcurrentBuilds()
         ansiColor('xterm')
     }
